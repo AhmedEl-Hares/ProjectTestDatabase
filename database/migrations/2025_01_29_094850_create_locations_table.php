@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('locations', function (Blueprint $table) {
+        Schema::create('Historical_locations', function (Blueprint $table) {
             $table->id('Location_Id')->primary();
             $table->string('Name')->unique();
             $table->string('Address')->unique();

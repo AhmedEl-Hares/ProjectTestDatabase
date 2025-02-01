@@ -22,8 +22,8 @@ return new class extends Migration
             $table->string('License_Number')->unique();
             $table->json('Languages');
             $table->decimal('Fees', 12, 3);
-            $table->string('Payment_currency');
-            $table->string('Payment_method');
+            $table->string('Payment_currency'); //as a start we can use enums that has (USD, EUR, EGP)
+            $table->string('Payment_method'); // cash, bank transfer, wallet
             $table->longText('Description');
             $table->boolean('VIP')->default(false);
             $table->json('Available_Dates');
